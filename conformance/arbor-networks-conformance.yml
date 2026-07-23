@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://arbor.github.io/sp-rest-api-cookbook/
+standards:
+  - id: json-api
+    conforms: true
+    evidence: >-
+      The Arbor Sightline SP REST API states its JSON input/output follows the JSON:API
+      specification; responses carry a top-level "relationships" object and the API is
+      fully discoverable from the root URL /api/sp/.
+    docs: https://arbor.github.io/sp-rest-api-cookbook/
+  - id: rest
+    conforms: true
+    evidence: Resource-oriented REST API over HTTPS, discoverable from /api/sp/ root.
+  - id: oauth2
+    conforms: false
+    evidence: SP REST API uses API-token (bearer) auth; no OAuth2 authorization server documented.
+  - id: openapi
+    conforms: false
+    evidence: No published OpenAPI/Swagger description found; documentation is a hand-written cookbook.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors follow the JSON:API "errors" member, not RFC 9457 application/problem+json.

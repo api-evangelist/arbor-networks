@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+host: https://www.netscout.com
+notes: >-
+  Probed with a browser User-Agent. Only /.well-known/security.txt returns a genuine
+  RFC 9116 document; the other paths return the site WAF's "Request Blocked" HTML
+  catch-all (soft-200, text/html), so they are recorded as not-present.
+documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: arbor-networks-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+    note: WAF "Request Blocked" HTML catch-all, not an OIDC document
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    note: WAF "Request Blocked" HTML catch-all, not an RFC 8414 document
+  - path: /.well-known/api-catalog
+    status: 404
+    note: WAF "Request Blocked" HTML catch-all, not an RFC 9727 catalog
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    note: WAF "Request Blocked" HTML catch-all, not an ai-plugin manifest

@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/arbor
+packages:
+  - language: python
+    registry: pypi
+    name: edm-client
+    url: https://pypi.org/project/edm-client/
+    install: pip install edm-client
+    official: true
+    notes: >-
+      First-party Python client for the Arbor Edge Defense Manager (EDM) API.
+      PyPI author "Steve William, NETSCOUT Systems, Inc." Source repo:
+      https://github.com/arbor/fidoclient (package "fidoclient", published as edm-client).
+    repo: https://github.com/arbor/fidoclient
+  - language: php
+    registry: packagist
+    name: robwdwd/arbor-api-bundle
+    url: https://packagist.org/packages/robwdwd/arbor-api-bundle
+    install: composer require robwdwd/arbor-api-bundle
+    official: false
+    notes: >-
+      Third-party Symfony bundle wrapping the Arbor Sightline (SP) REST API and the
+      Arbor Cloud API. Community-maintained, not published by NETSCOUT/Arbor.
+tools:
+  - language: python
+    name: sp-api-reporting
+    url: https://github.com/arbor/sp-api-reporting
+    official: true
+    notes: First-party tool for extracting Sightline/SP data via the REST API to generate reports.

@@ -1,8 +1,31 @@
 aid: arbor-networks
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arbor-networks.png
 name: Arbor Networks
-description: Arbor Networks is a company surfaced as a portfolio company of battery-ventures, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Arbor Networks is the DDoS protection and network-visibility division of NETSCOUT
+  (Arbor Networks was acquired by NETSCOUT in 2015). Drawing on more than 25 years of
+  experience and visibility into roughly 800 Tbps of global internet traffic across
+  550+ service-provider and enterprise customers, Arbor builds products that detect and
+  mitigate distributed denial-of-service (DDoS) attacks and provide network traffic
+  analytics. Its portfolio includes Arbor Sightline (formerly Peakflow SP) for
+  service-provider-scale monitoring, analytics and mitigation orchestration; Arbor Edge
+  Defense (AED) as an inline stateless perimeter appliance; the Arbor Threat Mitigation
+  System (TMS); Arbor Cloud managed scrubbing (16 global scrubbing centers, 15+ Tbps);
+  and Arbor Spectrum/Insight for advanced threat analytics. Arbor exposes programmatic
+  control primarily through the Sightline "SP REST API" (a JSON:API-compliant interface
+  rooted at /api/sp/ on the appliance) and the Edge Defense Manager (EDM) API, with
+  first-party client tooling published on GitHub and PyPI.
 url: https://raw.githubusercontent.com/api-evangelist/arbor-networks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,12 +36,83 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- DDoS Protection
+- Network Security
+- Cybersecurity
+- Threat Mitigation
+- Network Visibility
+- DDoS
+- Security
+apis:
+- name: Arbor Sightline SP REST API
+  description: >-
+    JSON:API-compliant REST API for NETSCOUT Arbor Sightline (formerly SP/Peakflow),
+    fully discoverable from the root URL /api/sp/. Exposes network traffic data, DDoS
+    alerts, managed objects, mitigations and reporting on the Sightline appliance.
+    API v5 ships with Sightline 9.0; the public cookbook documents SP v8.4 / API v4.
+  humanURL: https://arbor.github.io/sp-rest-api-cookbook/
+  baseURL: https://arbor.github.io/sp-rest-api-cookbook/sp-rest-api-tutorial.html
+  properties:
+  - type: Documentation
+    url: https://arbor.github.io/sp-rest-api-cookbook/
+  - type: APIReference
+    url: https://arbor.github.io/sp-rest-api-cookbook/sp-rest-api-tutorial.html
+  - type: SourceCode
+    url: https://github.com/arbor/sp-rest-api-cookbook
+- name: Arbor Edge Defense Manager (EDM) API
+  description: >-
+    REST API for NETSCOUT Arbor Edge Defense Manager (EDM) covering device management,
+    alert and threat viewing (DDoS alerts, threats), traffic analysis, Contextual Threat
+    Intelligence (CTI) data/config and executive report generation. Authenticated with
+    an API token generated from the EDM command line.
+  humanURL: https://arbor.github.io/edm-api-docs/
+  baseURL: https://arbor.github.io/edm-api-docs/
+  properties:
+  - type: Documentation
+    url: https://arbor.github.io/edm-api-docs/
+  - type: SourceCode
+    url: https://github.com/arbor/edm-api-docs
+common:
+- type: TrustCenter
+  url: security/arbor-networks-trust-center.yml
+- type: Compliance
+  url: https://trust.netscout.com/
+- type: VulnerabilityDisclosure
+  url: security/arbor-networks-vulnerability-disclosure.yml
+- type: Security
+  url: https://www.netscout.com/data-privacy-and-trust-center
+- type: SecurityTxt
+  url: well-known/arbor-networks-security.txt
+- type: Website
+  url: https://www.netscout.com/arbor
+- type: DeveloperPortal
+  url: https://www.netscout.com/arbor
+- type: Documentation
+  url: https://arbor.github.io/sp-rest-api-cookbook/
+- type: APIReference
+  url: https://arbor.github.io/sp-rest-api-cookbook/sp-rest-api-tutorial.html
+- type: GitHubOrganization
+  url: https://github.com/arbor
+- type: Packages
+  url: packages/arbor-networks-packages.yml
+- type: SDKs
+  url: packages/arbor-networks-packages.yml
+- type: Conformance
+  url: conformance/arbor-networks-conformance.yml
+- type: DomainSecurity
+  url: security/arbor-networks-domain-security.yml
+- type: WellKnown
+  url: well-known/arbor-networks-well-known.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

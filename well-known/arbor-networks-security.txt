@@ -1,0 +1,5 @@
+Contact: mbproductsecurity@netscout.com
+Encryption: https://www.netscout.com/netscout_publickey.txt
+Preferred-Languages: en
+Canonical:  Canonical: https://www.netscout.com/.well-known/security.txt
+Policy: https://www.netscout.com/data-privacy-and-trust-center

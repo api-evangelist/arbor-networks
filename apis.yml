@@ -76,6 +76,8 @@ apis:
   - type: SourceCode
     url: https://github.com/arbor/edm-api-docs
 common:
+- type: IssueTracker
+  url: https://github.com/arbor/edm-api-docs/issues
 - type: TrustCenter
   url: security/arbor-networks-trust-center.yml
 - type: Compliance

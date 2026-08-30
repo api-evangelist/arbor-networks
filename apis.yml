@@ -87,6 +87,11 @@ apis:
   - type: SourceCode
     url: https://github.com/arbor/edm-api-docs
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/netscout/
+  name: NETSCOUT
+  x-relationship: acquired
+  x-evidence: "Arbor Networks is the DDoS protection and network-visibility division of NETSCOUT (Arbor Networks was acquired by NETSCOUT in 2015)."
 - type: IssueTracker
   url: https://github.com/arbor/edm-api-docs/issues
 - type: TrustCenter

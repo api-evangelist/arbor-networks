@@ -64,6 +64,91 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Arbor Networks is a company surfaced as a portfolio company of battery-ventures, lightspeed-venture-partners and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Arbor Networks is the DDoS protection and network-visibility division of NETSCOUT (Arbor Networks was acquired by NETSCOUT in 2015). Drawing on more than 25 years of experience and visibility into roughly 800 Tbps of global internet traffic across 550+ service-provider and enterprise customers, Arbor builds products that detect and mitigate distributed denial-of-service (DDoS) attacks and provide network traffic analytics. Its portfolio includes Arbor Sightline (formerly Peakflow SP) for service-provider-scale monitoring, analytics and mitigation orchestration; Arbor Edge Defense (AED) as an inline stateless perimeter appliance; the Arbor Threat Mitigation System (TMS); Arbor Cloud managed scrubbing (16 global scrubbing centers, 15+ Tbps); and Arbor Spectrum/Insight for advanced threat analytics. Arbor exposes programmatic control primarily through the Sightline "SP REST API" (a JSON:API-compliant interface rooted at /api/sp/ on the appliance) and the Edge Defense Manager (EDM) API, with first-party client tooling published on GitHub and PyPI.
 
-Backed by: battery-ventures, lightspeed-venture-partners
+**Areas:** Company · DDoS Protection · Network Security · Cybersecurity · Threat Mitigation · Network Visibility · DDoS · Security
+
+## Arbor Networks on APIs.io
+
+Everything profiled for Arbor Networks is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/arbor-networks/](https://apis.io/providers/arbor-networks/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Arbor Sightline SP REST API](https://apis.io/apis/arbor-networks/arbor-sightline-sp-rest-api/) — JSON:API-compliant REST API for NETSCOUT Arbor Sightline (formerly SP/Peakflow), fully discoverable from the root URL /api/sp/. Exposes network traffic…
+- [Arbor Edge Defense Manager (EDM) API](https://apis.io/apis/arbor-networks/arbor-edge-defense-manager-edm-api/) — REST API for NETSCOUT Arbor Edge Defense Manager (EDM) covering device management, alert and threat viewing (DDoS alerts, threats), traffic analysis,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Arbor Networks Domain Security](https://apis.io/security/arbor-networks/arbor-networks-domain-security/)
+- [Arbor Networks Trust Center](https://apis.io/security/arbor-networks/arbor-networks-trust-center/)
+- [Arbor Networks Vulnerability Disclosure](https://apis.io/security/arbor-networks/arbor-networks-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.netscout.com/arbor)
+- [Documentation](https://arbor.github.io/sp-rest-api-cookbook/)
+- [API reference](https://arbor.github.io/sp-rest-api-cookbook/sp-rest-api-tutorial.html)
+- [Security](https://www.netscout.com/data-privacy-and-trust-center)
+- [Compliance](https://trust.netscout.com/)
+- [GitHub](https://github.com/arbor)
+
+## API Evangelist rating
+
+**Kin Score 21.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 15.8 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 21.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/arbor-networks/](https://apis.io/providers/arbor-networks/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Arbor Networks: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/arbor-networks/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
